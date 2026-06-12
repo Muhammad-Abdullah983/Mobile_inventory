@@ -1,6 +1,6 @@
 {
     "name": "mobile-inventory-management",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Mobile inventory management system for phone shop",
     "private": true,
     "scripts": {
