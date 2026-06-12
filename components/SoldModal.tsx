@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Phone, Buyer } from '@/lib/types';
+import { Phone } from '@/lib/types';
 import { storage } from '@/lib/storage';
 
 interface SoldModalProps {
@@ -58,7 +58,7 @@ export default function SoldModal({ phone, onConfirm, onCancel }: SoldModalProps
         // Update phone as sold
         storage.updatePhone(phone.id, {
             sold: true,
-            
+
             soldDate: formData.soldDate,
             buyerId: buyer.id,
             salePrice,
